@@ -1,0 +1,3 @@
+query GetNotificationPreferences {
+  get_notification_preferences
+}

@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListCategoryVideos($category:String!, $before:DateTime) {
+  videos: list_posts_by_type_category(type:"video", category:$category, before:$before) {
+    ...VideoSummary
+  }
+}

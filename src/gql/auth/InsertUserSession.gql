@@ -1,0 +1,3 @@
+mutation InsertUserSession($appVersion:String, $timeZone:String) {
+  insert_user_session(appVersion:$appVersion, timeZone:$timeZone)
+}

@@ -1,0 +1,27 @@
+#import "../fragments/BasicPost.gql"
+
+query GetPost($id:String!) {
+  post: get_post(id:$id){
+  	... BasicPost
+    user: postedByUser {
+      id
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isFollowing
+        isBlocked
+      }
+    }
+    comments:replies(limit:10) {
+      ... BasicPost
+      comments:replies(limit:10) {
+        ... BasicPost
+        comments:replies(limit:10) {
+          ... BasicPost
+        }
+      }
+    }
+  }
+}

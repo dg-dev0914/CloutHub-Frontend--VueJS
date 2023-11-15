@@ -1,0 +1,7 @@
+#import "../fragments/RelationalUser.gql"
+query ListRecommendedUsers {
+  people: recommended_users {
+    ...RelationalUser
+    bio
+  }
+}

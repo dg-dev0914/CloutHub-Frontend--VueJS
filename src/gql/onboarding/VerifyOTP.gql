@@ -1,0 +1,3 @@
+mutation VerfiyOTP($email: String!, $otp: Float!) {
+  verified: verify_email(email: $email, otp: $otp)
+}

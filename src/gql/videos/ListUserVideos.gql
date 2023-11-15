@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListUserVideos($userId:String!, $before:DateTime)  {
+  videos: list_user_videos(userId:$userId, before:$before) {
+    ...VideoSummary
+  }
+}

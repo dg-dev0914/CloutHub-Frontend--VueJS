@@ -1,0 +1,13 @@
+#import "../fragments/BasicPost.gql"
+
+query ListPostComments($postId:String!, $after:DateTime) {
+  comments: list_post_replies(postId:$postId, after:$after, limit:35){
+    ... BasicPost
+    comments:replies(limit:35) {
+      ... BasicPost
+      comments:replies(limit:35) {
+        ... BasicPost
+      }
+    }
+  }
+}

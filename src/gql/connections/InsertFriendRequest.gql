@@ -1,0 +1,7 @@
+#import "@/gql/fragments/RelationshipSummary.gql"
+
+mutation InsertFriendRequest($userId:String!) {
+	request_friend(userId:$userId){
+    ...RelationshipSummary
+  }
+}

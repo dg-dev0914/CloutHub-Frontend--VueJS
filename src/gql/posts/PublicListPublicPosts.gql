@@ -1,0 +1,32 @@
+#import "../fragments/PublicBasicPost.gql"
+
+query PublicListPublicPosts($before:DateTime) {
+  posts: public_list_public_posts(before:$before){
+  	... BasicPost
+    group {
+      id
+      name
+    }
+     comments:replies(limit:3) {
+      ... BasicPost
+      comments:replies(limit:3) {
+        ... BasicPost
+        comments:replies(limit:3) {
+          ... BasicPost
+        }
+      }
+    }
+    sharedPost {
+      ... BasicPost
+      comments:replies(limit:3) {
+        ... BasicPost
+        comments:replies(limit:3) {
+          ... BasicPost
+          comments:replies(limit:3) {
+            ... BasicPost
+          }
+        }
+      }
+    }
+  }
+}

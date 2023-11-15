@@ -1,0 +1,3 @@
+mutation JoinMeeting($meetingId:String!){
+  join_meeting(meetingId:$meetingId)
+}

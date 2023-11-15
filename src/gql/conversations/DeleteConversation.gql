@@ -1,0 +1,3 @@
+mutation DeleteConversation($conversationId:String!) {
+	deletedConversation: delete_conversation(conversationId:$conversationId)
+}

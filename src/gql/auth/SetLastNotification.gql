@@ -1,0 +1,3 @@
+mutation SetLastNotification($notificationId:ID!){
+  set_last_notification(notificationId:$notificationId)
+}

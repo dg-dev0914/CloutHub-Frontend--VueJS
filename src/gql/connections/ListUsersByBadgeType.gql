@@ -1,0 +1,7 @@
+#import "../fragments/RelationalUser.gql"
+query ListUsersByBadgeType($badgeType:String!, $limit:Float = 25) {
+  people: list_users_by_badge_type(badgeType:$badgeType, limit:$limit){
+    ...RelationalUser
+    bio
+  }
+}

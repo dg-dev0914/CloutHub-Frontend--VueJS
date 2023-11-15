@@ -1,0 +1,6 @@
+query SearchGiphy($query:String!,$offset:Float!){
+  gifs: search_giphy(searchString:$query,offset:$offset){
+    id
+    url
+  }
+}

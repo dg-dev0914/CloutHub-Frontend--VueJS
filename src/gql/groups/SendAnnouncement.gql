@@ -1,0 +1,13 @@
+mutation SendAnnouncement(
+  $groupId: String!
+  $description: String!
+  $link: String
+  $recipients: [AnnouncementRecipient!]!
+) {
+  send_announcement(
+    groupId: $groupId
+    recipients: $recipients
+    description: $description
+    link: $link
+  )
+}

@@ -1,0 +1,10 @@
+query GetTranslatedPost($id:String!, $languageCode:String!) {
+  post: get_post(id:$id) {
+    id,
+    translated(id:$id, languageCode:$languageCode) { 
+      id,
+      result,
+      languageCode
+    },
+  }
+}

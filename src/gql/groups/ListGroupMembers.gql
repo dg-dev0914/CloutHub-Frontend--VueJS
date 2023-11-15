@@ -1,0 +1,11 @@
+#import "../fragments/GroupMembership.gql"
+#import "../fragments/UserSummary.gql"
+
+query ListGroupMembers($id:String!, $role:String!, $offset:Float, $searchMemberInput: String){
+  members: list_group_memberships(role:$role, groupId:$id, offset:$offset, searchMemberInput:$searchMemberInput){
+    ...GroupMembership
+    user {
+      ...UserSummary
+    }
+  }
+}

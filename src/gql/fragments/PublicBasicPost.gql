@@ -1,0 +1,47 @@
+fragment BasicPost on Post {
+  id
+  slug
+  bodyText
+  createdAt
+  postLevel
+  linkPreview
+  timestamp
+  location
+  images
+  video
+  document
+  pendingAdminReview
+  rootPostId
+  isBookmarked
+  parentPostId
+  tags
+  reactionCount
+  replyCount
+  commentsCount
+  sharedPostCount
+  profanityStatus
+  category
+  type
+  safe
+  user: postedByUser {
+    id
+    username
+    badgeType
+    displayname
+    profilePhotoURL
+    suspended
+  }
+  mentions: mentionedUsers {
+    id
+    username
+    displayname
+  }
+  reactionTotals: reactionSummary {
+    type
+    count
+  }
+  myReaction {
+    id
+    type
+  }
+}

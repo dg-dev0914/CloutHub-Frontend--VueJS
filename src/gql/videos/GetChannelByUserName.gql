@@ -1,0 +1,26 @@
+query GetChannelByUserName($username: String!) {
+  user(username: $username) {
+    id
+    username
+    displayname
+    badgeType
+    profilePhotoURL
+    subscribedToChannel
+    subscribersCount
+    myRelationship {
+      id
+      isFriend
+      isFollower
+      friendStatus
+      isBlocked
+    }
+    channelName
+    channelPicture
+    channelDescription
+    channelSlug
+    channelButtonLabel
+    channelButtonLink
+    channelButtonLabel2
+    channelButtonLink2
+  }
+}

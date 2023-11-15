@@ -1,0 +1,77 @@
+[
+  {
+    "label": "News",
+    "value": "news",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/f7706191-2414-4e94-9347-12c61cc5a2ba.jpg"
+  },
+  {
+    "label": "Faith",
+    "value": "faith",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/f6dd0de3-3539-4c96-aa8f-ea0b89d16d00.jpg"
+  },
+  {
+    "label": "Politics",
+    "value": "politics",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/d814f8ac-d67a-42ea-8941-081d4453ae84.jpg"
+  },
+  {
+    "label": "Music",
+    "value": "music",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/100b54c5-f70c-4fe7-b737-881356aff58f.jpg"
+  },
+  {
+    "label": "Sports",
+    "value": "sports",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/231412e6-0308-40f4-827b-a7778854c062.jpg"
+  },
+  {
+    "label": "Technology",
+    "value": "technology",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/9fd2d74d-761e-4a5f-a794-803581925c88.jpg"
+  },
+  {
+    "label": "Games",
+    "value": "games",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/ed91e66c-4d00-4a82-a458-1a6575fad8bf.jpg"
+  },
+  {
+    "label": "Education",
+    "value": "education",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/3d162637-a77a-4049-be55-8cf7c9caa9ad.jpg"
+  },
+  {
+    "label": "Finance",
+    "value": "finance",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/b5557ecf-214a-4ba6-9ee6-8171252e3d99.jpg"
+  },
+  {
+    "label": "Business",
+    "value": "business",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/6af9093c-8969-4b3c-b521-6da0899d2225.jpg"
+  },
+  {
+    "label": "Health",
+    "value": "health",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/75404c2f-80bd-4234-abaa-612f788c2834.jpg"
+  },
+  {
+    "label": "Movies",
+    "value": "movies",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/b52f4f6f-5f0a-4d11-bc05-14bc062c6b22.jpg"
+  },
+  {
+    "label": "Personal",
+    "value": "personalgrowth",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/32de86bc-820c-41de-a946-e1c5e7f71d50.jpg"
+  },
+  {
+    "label": "Fashion",
+    "value": "fashion",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/24741eb7-1462-442e-b154-399dde49ae46.jpg"
+  },
+  {
+    "label": "Humor",
+    "value": "humor",
+    "img": "https://chforum.backendcdn.com/us-west-2:5a31b81d-68e1-4f92-8e36-5d8c94f25048/186a2ca3-7a80-4ecb-a0b4-fa7379e778f7.jpg"
+  }
+]

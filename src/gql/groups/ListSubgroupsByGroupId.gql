@@ -1,0 +1,7 @@
+#import "../fragments/GroupSummary.gql"
+
+query ListSubgroupsByGroupId($parentGroupId: String!) {
+  groups: list_subgroups_by_parentGroupId(parentGroupId: $parentGroupId) {
+    ...GroupSummary
+  }
+}

@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListLiveVideos($before: DateTime) {
+  videos: list_live_videos(before: $before) {
+    ...VideoSummary
+  }
+}

@@ -1,0 +1,25 @@
+#import "../fragments/GroupDetail.gql"
+
+mutation CreateGroup(
+  $name: String!
+  $parentGroupId: String
+  $picture: String
+  $banner: String
+  $description: String
+  $privacy: String
+  $slug: String
+  $enableAdminReview: Boolean
+) {
+  create_group(
+    parentGroupId: $parentGroupId
+    name: $name
+    picture: $picture
+    banner: $banner
+    description: $description
+    privacy: $privacy
+    slug: $slug
+    enableAdminReview: $enableAdminReview
+  ) {
+    ...GroupDetail
+  }
+}

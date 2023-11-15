@@ -1,0 +1,75 @@
+query GetMe {
+  user: get_me {
+    id
+    firstname
+    lastname
+    username
+    displayname
+    followerCount
+    followingCount
+    friendCount
+    bio
+    badgeType
+    location
+    privateLocation
+    website
+    isLiveStreaming
+    phoneNo
+    dob
+    email
+    profilePhotoURL
+    bannerImageURL
+    gender
+    allowUnsolicitedMessages
+    politicalLeaning
+    politicalRegistration
+    issuesOfInterestLocal
+    issuesOfInterestNational
+    showFollowerCount
+    myRelationship {
+      id
+      isFriend
+      isFollower
+      friendStatus
+      isBlocked
+    }
+    mutual_friends {
+      id
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isBlocked
+      }
+    }
+    mutual_following {
+      id
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isBlocked
+      }
+    }
+    mutual_followers {
+      id
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isBlocked
+      }
+    }
+    mutual_local_interests
+    mutual_national_interests
+  }
+}

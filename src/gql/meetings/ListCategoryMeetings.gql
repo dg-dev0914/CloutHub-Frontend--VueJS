@@ -1,0 +1,7 @@
+#import "../fragments/MeetingSummary.gql"
+
+query ListCategoryMeetings($category: String!, $offset:Float){
+  meetings: list_meetings_by_category(category:$category, offset:$offset) {
+    ... MeetingSummary
+  }
+}

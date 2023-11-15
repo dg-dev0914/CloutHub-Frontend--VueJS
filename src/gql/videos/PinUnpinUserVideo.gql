@@ -1,0 +1,7 @@
+#import "../fragments/PublicBasicPost.gql"
+
+mutation PinUnpinUserVideo($postId:String!,$isPinnedOnChannel:Boolean!) {
+  pin_unpin_user_video(postId:$postId,isPinnedOnChannel:$isPinnedOnChannel) {
+    ...BasicPost
+  }
+}

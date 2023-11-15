@@ -1,0 +1,7 @@
+mutation AllowOtherMessages($allowUnsolicitedMessages: Boolean!) {
+  update_user(allowUnsolicitedMessages: $allowUnsolicitedMessages) {
+    id
+    firstname
+    allowUnsolicitedMessages
+  }
+}

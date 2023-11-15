@@ -1,0 +1,8 @@
+#import "../fragments/VideoChannelSummary.gql"
+
+query ChannelSearch($query:String!) {
+  users: find_channels(searchString: $query){
+    ...VideoChannelSummary
+    subscribedToChannel
+  }
+}

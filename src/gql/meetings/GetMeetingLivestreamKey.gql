@@ -1,0 +1,3 @@
+query GetMeetingLivestreamKey($meetingId:String!){
+  get_meeting_livestream_key(meetingId:$meetingId)
+}

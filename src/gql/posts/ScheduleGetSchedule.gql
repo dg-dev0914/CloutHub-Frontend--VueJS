@@ -1,0 +1,12 @@
+query GetSchedule {
+  scheduledStreams: getScheduledStreams {
+    cssid
+    uid
+    stream_datetime
+    stream_datetime_end
+    stream_title
+    stream_description
+    stream_image
+    username
+  }
+}

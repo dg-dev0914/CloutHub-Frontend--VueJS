@@ -1,0 +1,8 @@
+query GetLiveStream{
+  get_live_stream{
+    id
+    liveStreamUrl
+    liveStreamKey
+  }
+}
+

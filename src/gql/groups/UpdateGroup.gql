@@ -1,0 +1,16 @@
+#import "../fragments/GroupDetail.gql"
+
+mutation UpdateGroup($id:String!, $enableAdminReview: Boolean, $name:String!, $picture:String, $banner:String, $description:String, $privacy:String, $slug:String) {
+  update_group(
+    id: $id
+    name: $name,
+    picture: $picture,
+    banner: $banner,
+    description: $description,
+    privacy: $privacy,
+    enableAdminReview: $enableAdminReview
+    slug: $slug
+  ) {
+    ...GroupDetail
+  }
+}

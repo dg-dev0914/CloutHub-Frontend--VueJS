@@ -1,0 +1,17 @@
+mutation id(
+  $id: String!,
+  $channelName: String!,
+  $channelPicture: String,
+  $channelSlug: String
+) {
+  update_user(
+    id: $id,
+    channelName: $channelName,
+    channelPicture: $channelPicture
+    channelSlug: $channelSlug
+  ) {
+    id
+    channelName,
+    channelPicture,
+  }
+}

@@ -1,0 +1,3 @@
+query CheckUsernameAvailability($username:String!) {
+  check_username_availability(username:$username)
+}

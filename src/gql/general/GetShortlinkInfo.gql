@@ -1,0 +1,3 @@
+query GetShortlinkInfo($type:String!,$identifier:String!) {
+  id:get_shortlink_info(type:$type, identifier:$identifier)
+}

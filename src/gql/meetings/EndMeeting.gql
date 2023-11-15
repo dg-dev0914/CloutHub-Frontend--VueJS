@@ -1,0 +1,3 @@
+mutation EndMeeting($meetingId:String!){
+  end_meeting(meetingId:$meetingId)
+}

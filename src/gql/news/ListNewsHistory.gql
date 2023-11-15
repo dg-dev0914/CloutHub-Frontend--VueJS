@@ -1,0 +1,7 @@
+#import "../fragments/NewsSummary.gql"
+
+query ListNewsQueued ($offset:Float, $limit:Float){
+  posts: recently_viewed_posts_by_type(type:"news", offset:$offset, limit:$limit) {
+    ...NewsSummary
+  }
+}

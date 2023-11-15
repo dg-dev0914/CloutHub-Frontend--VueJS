@@ -1,0 +1,19 @@
+query ListBlockedUsers ($offset:Float){
+  people: list_blocked (offset:$offset){
+    id
+    firstname
+    lastname
+    username
+    badgeType
+    displayname
+    profilePhotoURL
+    myRelationship {
+      id
+      isFriend
+      isFollower
+      isFollowing
+      friendStatus
+      isBlocked
+    }
+  }
+}

@@ -1,0 +1,13 @@
+#import "./UserSummary.gql"
+
+fragment MeetingMembership on MeetingMember {
+  id
+  meetingId
+  userId
+  role
+  online
+  ticketStatus
+  user{
+    ... UserSummary
+  }
+}

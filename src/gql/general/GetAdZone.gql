@@ -1,0 +1,11 @@
+query GetAdZone($zone_name: String!) {
+  adZone: getAdZone(zone_name: $zone_name) {
+    id
+    zone_name
+    invocation_code
+    area
+    ad_size
+    value
+    createdAt
+  }
+}

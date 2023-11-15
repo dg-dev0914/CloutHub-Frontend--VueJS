@@ -1,0 +1,51 @@
+mutation UpdateMeeting(
+  $id: String!
+  $name: String!
+  $description: String
+  $picture: String
+  $category: String
+  $privacy: String!
+  $enableQueue: Boolean
+  $startTime: DateTime!
+  $endTime: DateTime
+  $parentMeetingId: String
+  $buttons: [Button!]
+  $slug: String
+  $ticketPrice: Float
+  $referralCodes: [MeetingReferralCodeInput!]
+) {
+  update_meeting(
+    id: $id
+    name: $name
+    description: $description
+    picture: $picture
+    category: $category
+    privacy: $privacy
+    startTime: $startTime
+    endTime: $endTime
+    parentMeetingId: $parentMeetingId
+    buttons: $buttons
+    enableQueue: $enableQueue
+    slug: $slug
+    ticketPrice: $ticketPrice
+    referralCodes: $referralCodes
+  ) {
+    id
+    name
+    picture
+    category
+    privacy
+    description
+    startTime
+    endTime
+    buttons
+    enableQueue
+    parentMeetingId
+    referralCodes {
+      id
+      name
+      amount
+      type
+    }
+  }
+}

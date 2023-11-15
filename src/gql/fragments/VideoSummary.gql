@@ -1,0 +1,27 @@
+fragment VideoSummary on Post {
+  id
+  user: postedByUser {
+    id
+    username
+    displayname
+    badgeType
+    profilePhotoURL
+    myRelationship {
+      id
+      isBlocked
+      isFollowing
+      isFollower
+    }
+  }
+  bodyText
+  video
+  createdAt
+  viewCount
+  isBookmarked
+  isQueued
+  ispinnedonchannel
+  category
+  type
+  safe
+  slug
+}

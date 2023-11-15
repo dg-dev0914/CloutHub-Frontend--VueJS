@@ -1,0 +1,3 @@
+mutation SetNotificationPreferences($preferences: JSONObject!) {
+  set_notification_preferences(preferences: $preferences)
+}

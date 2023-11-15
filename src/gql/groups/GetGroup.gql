@@ -1,0 +1,7 @@
+#import "../fragments/GroupDetail.gql"
+
+query GetGroup($id: String!) {
+  group(id: $id) {
+    ...GroupDetail
+  }
+}

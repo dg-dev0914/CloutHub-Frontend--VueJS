@@ -1,0 +1,11 @@
+query GetPostReactions($id:uuid){
+  post_reaction_totals(where:{
+    postId:{
+      _eq:$id
+    }
+  }){
+    postId
+    type
+    count
+  }
+}

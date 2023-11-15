@@ -1,0 +1,3 @@
+mutation RequestVerification($requestedBadgeType:String!, $verificationUrl:String!){
+  request_verification(requestedBadgeType:$requestedBadgeType, verificationUrl:$verificationUrl)
+}

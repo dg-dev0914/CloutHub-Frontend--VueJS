@@ -1,0 +1,7 @@
+#import "../fragments/NewsSummary.gql"
+
+query ListNewsBookmarked ($offset:Float, $limit:Float){
+  posts: bookmarked_posts_by_type(type:"news", offset:$offset, limit:$limit) {
+    ...NewsSummary
+  }
+}

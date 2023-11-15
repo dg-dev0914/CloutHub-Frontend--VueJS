@@ -1,0 +1,32 @@
+image: node:16
+
+clone:
+  depth: full
+
+definitions:
+  steps:
+    - step: &build
+        script:
+          - apt-get update && apt-get install zip -y
+          - yarn install
+          - yarn build
+          - cd dist; zip -r ../latest.zip *; cd ..
+          - curl -F package=@latest.zip https://deploy.efficientcloud.com/sites/ch-desktop/${DOCKER_ENV_TAG}?key=${ECS_DEPLOY_KEY}
+pipelines:
+  branches:
+    master:
+      - step:
+          <<: *build
+          deployment: production
+    dev:
+      - step:
+          <<: *build
+          deployment: dev
+    testing:
+      - step:
+          <<: *build
+          deployment: testing
+    staging:
+      - step:
+          <<: *build
+          deployment: staging

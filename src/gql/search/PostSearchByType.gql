@@ -1,0 +1,23 @@
+query PostSearchByType($type:String!, $query:String!, $limit: Float, $offset: Float) {
+  posts:find_posts_by_type(type:$type,searchString:$query, limit: $limit, offset:$offset){
+    id
+    postedByUser {
+      id
+      displayname
+      profilePhotoURL
+    }
+    user: postedByUser {
+      id
+      displayname
+      profilePhotoURL
+    }
+    bodyText
+    video
+    createdAt
+    viewCount
+    safe
+    linkPreview
+    isBookmarked
+    isQueued
+  }
+}

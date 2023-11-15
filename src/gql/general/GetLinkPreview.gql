@@ -1,0 +1,10 @@
+query GetLinkPreview($url:String!){
+  link_preview(url:$url) {
+    originalLink
+    title
+    url
+    details
+    image
+    spamScore
+  }
+}

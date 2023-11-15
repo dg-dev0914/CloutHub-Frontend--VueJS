@@ -1,0 +1,7 @@
+#import "../fragments/NewsSummary.gql"
+
+query ListNewsLatest($before:DateTime){
+  posts: list_news_latest(before:$before){
+    ...NewsSummary
+  }
+}

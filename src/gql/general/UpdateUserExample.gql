@@ -1,0 +1,62 @@
+mutation UpdateUser(
+  $firstname: String
+  $lastname: String
+  $displayname: String
+  $location: Location
+  $profilePhotoURL: String
+  $privateLocation: Boolean
+  $bannerImageURL: String
+  $website: String
+  $bio: String
+  $gender: String
+  $dob: DateTime
+  $username: String
+  $politicalLeaning: String
+  $politicalRegistration: String
+  $issuesOfInterestLocal: [String!]
+  $issuesOfInterestNational: [String!]
+  $phoneNo: String
+  $showFollowerCount: Boolean
+) {
+  update_user_data(
+    firstname: $firstname
+    lastname: $lastname
+    displayname: $displayname
+    location: $location
+    profilePhotoURL: $profilePhotoURL
+    privateLocation: $privateLocation
+    bannerImageURL: $bannerImageURL
+    website: $website
+    bio: $bio
+    gender: $gender
+    dob: $dob
+    username: $username
+    politicalLeaning: $politicalLeaning
+    politicalRegistration: $politicalRegistration
+    issuesOfInterestLocal: $issuesOfInterestLocal
+    issuesOfInterestNational: $issuesOfInterestNational
+    phoneNo: $phoneNo
+    showFollowerCount: $showFollowerCount
+  ) {
+    id
+    firstname
+    lastname
+    displayname
+    location
+    profilePhotoURL
+    privateLocation
+    bannerImageURL
+    website
+    badgeType
+    username
+    bio
+    gender
+    politicalLeaning
+    politicalRegistration
+    issuesOfInterestLocal
+    issuesOfInterestNational
+    showFollowerCount
+    phoneNo
+    dob
+  }
+}

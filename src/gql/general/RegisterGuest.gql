@@ -1,0 +1,7 @@
+mutation RegisterGuest($email:String!, $displayName:String!, $avatarURL:String!){
+  token:registerGuest(
+    email: $email,
+    displayName: $displayName,
+    avatarURL: $avatarURL
+  )
+}

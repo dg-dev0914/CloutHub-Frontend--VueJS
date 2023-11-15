@@ -1,0 +1,20 @@
+#import "../fragments/BasicPost.gql"
+
+query PostSearch($query:String!, $limit: Float, $offset: Float) {
+  posts: find_posts(searchString:$query, limit: $limit, offset:$offset){
+    ... BasicPost
+    group {
+      id
+      name
+    }
+    comments:replies(limit:1) {
+      ... BasicPost
+      comments:replies(limit:1) {
+        ... BasicPost
+        comments:replies(limit:1) {
+          ... BasicPost
+        }
+      }
+    }
+  }
+}

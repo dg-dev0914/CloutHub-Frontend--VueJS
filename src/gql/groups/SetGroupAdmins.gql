@@ -1,0 +1,7 @@
+mutation SetGroupAdmins(
+  $groupId: String!
+  $admins: [String!]
+  $moderators: [String!]
+) {
+  set_group_admins(groupId: $groupId, admins: $admins, moderators: $moderators)
+}

@@ -1,0 +1,9 @@
+
+query GetUserSettings($id:String!){
+  get_user_settings(userId:$id){
+    quickVideoDuration
+    galleryVideoDuration
+    postCharacters
+    messageCharacters
+  }
+}

@@ -1,0 +1,7 @@
+#import "../fragments/NewsSummary.gql"
+
+query UserNews($userId:String!, $before:DateTime) {
+  posts:list_user_posts_by_type(userId:$userId,type:"news", before:$before){
+    ...NewsSummary
+  }
+}

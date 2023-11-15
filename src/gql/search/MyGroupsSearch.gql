@@ -1,0 +1,15 @@
+query MyGroupsSearch($query:String!, $limit: Float, $offset: Float) {
+  groups: find_user_groups(searchString:$query, limit: $limit, offset:$offset){
+    id
+    name
+    picture
+    memberCount
+    postCount
+    privacy
+    createdAt
+    myMembership {
+      id
+      role
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation SetPostReaction($postId:String!, $type:String!){
+  react_post(postId:$postId, type:$type) {
+    id
+    postId
+    type
+  }
+}

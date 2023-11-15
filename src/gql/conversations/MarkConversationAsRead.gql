@@ -1,0 +1,8 @@
+mutation MarkConversationAsRead($id: String!) {
+  markedConversation: mark_conversation_read(conversationId: $id) {
+    id
+    conversationId
+    msgCreateTime
+    unreadCount
+  }
+}

@@ -1,0 +1,9 @@
+#import "../fragments/VideoChannelSummary.gql"
+#import "../fragments/UserSummary.gql"
+
+query ListSubscribedChannels {
+  users: list_subscribed_channels {
+    ...VideoChannelSummary
+    ...UserSummary
+  }
+}

@@ -1,0 +1,12 @@
+query {
+  users: list_featured_users_by_type(type: "news") {
+    id
+    username
+    badgeType
+    displayname
+    profilePhotoURL
+    bio
+    followerCount
+    followingCount
+  }
+}

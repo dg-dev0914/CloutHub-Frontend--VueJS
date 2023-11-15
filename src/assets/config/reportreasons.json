@@ -1,0 +1,50 @@
+{
+  "group":[
+    "Misleading or scam",
+    "Inappropriate",
+    "Offensive",
+    "Violence",
+    "Prohibited Content",
+    "Spam",
+    "False News",
+    "Other"
+  ],
+  "post":[
+    "Misleading or scam",
+    "Inappropriate",
+    "Offensive",
+    "Violence",
+    "Prohibited Content",
+    "Spam",
+    "False News",
+    "Other"
+  ],
+  "comment":[
+    "Misleading or scam",
+    "Inappropriate",
+    "Offensive",
+    "Violence",
+    "Prohibited Content",
+    "Spam",
+    "False News",
+    "Other"
+  ],
+  "user": [
+    "Abusive language or behavior",
+    "Inappropriate content",
+    "Spam",
+    "Threatening harm to self or others",
+    "Possible illegal activities",
+    "Pretending to be someone else",
+    "Their account seems to be hacked",
+    "Doesn’t represent a real individual",
+    "Other"
+  ],
+  "own-video": [
+    "Video doesn't play at all",
+    "Video gets stuck during playback",	
+    "Video is the wrong size",	
+    "Video is low quality",	
+    "No sound"
+  ]
+}

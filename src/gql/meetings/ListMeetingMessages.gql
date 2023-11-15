@@ -1,0 +1,20 @@
+query ListMeetingMessages($meetingId:String!, $before:DateTime){
+  messages: list_meeting_messages(id:$meetingId, before:$before){
+    id
+    meetingId
+    postedByUserId
+    postedByUser {
+      id
+      username
+      displayname
+      profilePhotoURL
+      bannerImageURL
+      bio
+      location
+      website
+      politicalLeaning
+    }
+    bodyText
+    createdAt
+  }
+}

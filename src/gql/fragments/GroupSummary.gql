@@ -1,0 +1,19 @@
+#import "./GroupMembership.gql"
+
+fragment GroupSummary on Group {
+  id
+  name
+  picture
+  memberCount
+  postCount
+  slug
+  privacy
+  enableAdminReview
+  createdAt
+  parentGroupId
+  rootGroupId
+  subgroupCount
+  myMembership {
+    ...GroupMembership
+  }
+}

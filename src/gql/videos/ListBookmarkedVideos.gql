@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListBookmarkedVideos ($offset:Float, $limit:Float) {
+  videos: bookmarked_posts_by_type(type:"video", offset:$offset, limit:$limit) {
+    ...VideoSummary
+  }
+}

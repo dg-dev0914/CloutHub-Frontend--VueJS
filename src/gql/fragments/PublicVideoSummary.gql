@@ -1,0 +1,20 @@
+fragment PublicVideoSummary on Post {
+  id
+  user: postedByUser {
+    id
+    username
+    badgeType
+    displayname
+    profilePhotoURL
+  }
+  bodyText
+  video
+  createdAt
+  viewCount
+  isBookmarked
+  isQueued
+  category
+  type
+  safe
+  slug
+}

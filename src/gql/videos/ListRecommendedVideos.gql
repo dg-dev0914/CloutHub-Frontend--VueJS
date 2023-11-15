@@ -1,0 +1,14 @@
+query ListRecommendedVideos {
+    videos: list_recommended_videos {
+        id
+        video
+        safe
+        postedByUser {
+            id
+            displayname
+            profilePhotoURL
+            channelName
+            channelPicture
+        }
+    }
+}

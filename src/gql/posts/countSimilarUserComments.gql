@@ -1,0 +1,3 @@
+query CountSimilarUserComments($userId: String!, $bodyText: String!) {
+  count_similar_user_comments(userId: $userId, bodyText: $bodyText)
+}

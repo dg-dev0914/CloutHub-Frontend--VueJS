@@ -1,0 +1,7 @@
+#import "../fragments/UserSummary.gql"
+
+query FollowerSearch($keyword:String!){
+  followers: find_followers(keyword:$keyword){
+    ...UserSummary
+  }
+}

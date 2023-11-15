@@ -1,0 +1,7 @@
+#import "../fragments/GroupMembership.gql"
+
+mutation SetGroupNotificationsType($groupId:String!, $notificationsType: GroupNotificationsType!) {
+  set_group_notifications_type(notificationsType: $notificationsType, groupId:$groupId) {
+    ... GroupMembership
+  }
+}

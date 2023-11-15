@@ -1,0 +1,3 @@
+mutation IncrementViewCount($postId:String!) {
+  increment_view_count(postId:$postId)
+}

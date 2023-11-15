@@ -1,0 +1,6 @@
+fragment GroupMembership on GroupMembership {
+  id
+  role
+  createdAt
+  notificationsType
+}

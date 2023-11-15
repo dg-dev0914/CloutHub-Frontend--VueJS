@@ -1,0 +1,23 @@
+query GetConversation($participantId: String!) {
+  conversation: get_conversation(id: $participantId) {
+    conversationId
+    otherParty {
+      id
+      username
+      firstname
+      lastname
+      badgeType
+      displayname
+      profilePhotoURL
+      allowUnsolicitedMessages
+      myRelationship{
+        id
+        isFriend
+        friendStatus
+        isFollower
+        isFollowing
+        isBlocked
+      }
+    }
+  }
+}

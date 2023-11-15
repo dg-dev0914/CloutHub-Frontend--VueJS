@@ -1,0 +1,46 @@
+#import "./MeetingMembership.gql"
+
+fragment MeetingSummary on Meeting {
+  id
+  name
+  description
+  privacy
+  startTime
+  lastActive
+  endTime
+  ticketPrice
+  slug
+  attendeesCount
+  isOpen
+  isLive
+  status
+  recordingUrlMp4
+  recordingUrl
+  recordingStatus
+  streamId
+  streamStatus
+  picture
+  category
+  leadersCount
+  attendeesCount
+  buttons
+  membersCount
+  host {
+    id
+    firstname
+    lastname
+    displayname
+    profilePhotoURL
+    username
+  }
+  parentMeetingId
+  referralCodes {
+    id
+    name
+    amount
+    type
+  }
+  myMembership {
+    ...MeetingMembership
+  }
+}

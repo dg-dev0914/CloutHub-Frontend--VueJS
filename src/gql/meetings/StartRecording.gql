@@ -1,0 +1,3 @@
+mutation StartRecording($meetingId:String!,$token: String!){
+  start_meeting_recording(meetingId:$meetingId, token:$token)
+}

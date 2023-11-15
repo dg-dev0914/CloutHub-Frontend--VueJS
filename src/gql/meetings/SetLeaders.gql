@@ -1,0 +1,13 @@
+mutation SetLeaders(
+  $meetingId: String!
+  $presenters: String
+  $moderators: String
+  $admins: String
+) {
+  set_leaders(
+    meetingId: $meetingId
+    presenters: $presenters
+    moderators: $moderators
+    admins: $admins
+  )
+}

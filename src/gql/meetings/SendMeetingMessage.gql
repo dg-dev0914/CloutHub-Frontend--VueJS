@@ -1,0 +1,8 @@
+mutation InsertMeetingMessage($meetingId:String!, $bodyText:String!) {
+  insert_meeting_message(meetingId:$meetingId,bodyText:$bodyText){
+    id
+    meetingId
+    bodyText
+    postedByUserId
+  }
+}

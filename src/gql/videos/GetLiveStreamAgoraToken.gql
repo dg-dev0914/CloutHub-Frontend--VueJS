@@ -1,0 +1,3 @@
+query GetLiveStreamAgoraToken($liveStreamKey:String!){
+  token:get_live_stream_agora_token(liveStreamKey:$liveStreamKey)
+}

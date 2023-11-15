@@ -1,0 +1,9 @@
+#import "../fragments/VideoChannelSummary.gql"
+#import "../fragments/UserSummary.gql"
+
+query {
+  users: list_following{
+    ...VideoChannelSummary
+    ...UserSummary
+  }
+}

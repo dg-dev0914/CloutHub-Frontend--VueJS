@@ -1,0 +1,8 @@
+#import "../fragments/BasicPost.gql"
+
+fragment NewsSummary on Post {
+  ... BasicPost
+  viewCount
+  isQueued
+  isBookmarked
+}

@@ -1,0 +1,9 @@
+#import "./UserSummary.gql"
+#import "./RelationshipSummary.gql"
+
+fragment RelationalUser on User {
+  ...UserSummary
+  myRelationship {
+    ...RelationshipSummary
+  }
+}

@@ -1,0 +1,3 @@
+mutation DeletePostMessage($id:String!){
+  delete_post_message(id:$id)
+}

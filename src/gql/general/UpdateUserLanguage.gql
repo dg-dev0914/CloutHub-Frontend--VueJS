@@ -1,0 +1,7 @@
+mutation UpdateUserLanguage($language: String!) {
+  update_user(language: $language) {
+    id
+    displayname
+    language
+  }
+}

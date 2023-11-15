@@ -1,0 +1,7 @@
+#import "../fragments/GroupSummary.gql"
+
+query ListCategoryGroups($category: String!, $before: DateTime, $offset: Float){
+  groups: list_groups_by_category(category:$category, before: $before, offset: $offset) {
+    ... GroupSummary
+  }
+}

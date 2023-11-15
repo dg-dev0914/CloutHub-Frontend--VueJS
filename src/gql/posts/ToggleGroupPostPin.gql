@@ -1,0 +1,7 @@
+#import "../fragments/GroupPost.gql"
+
+mutation ToggleGroupPostPin($postId:String!) {
+    post: toggle_group_post_pin(postId: $postId) {
+        ...GroupPost
+    }
+}

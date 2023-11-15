@@ -1,0 +1,3 @@
+query GetLastUserNotification {
+  get_last_user_notification
+}

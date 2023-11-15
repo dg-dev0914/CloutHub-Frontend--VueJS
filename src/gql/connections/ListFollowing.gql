@@ -1,0 +1,7 @@
+#import "../fragments/RelationalUser.gql"
+query ListFollowing ($offset:Float){
+  people: list_following (offset:$offset){
+    ...RelationalUser
+    bio
+  }
+}

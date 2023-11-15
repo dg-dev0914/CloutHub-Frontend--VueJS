@@ -1,0 +1,3 @@
+query GetAgoraToken($meetingId:String!, $randomUid:String){
+  token:get_agora_token(meetingId:$meetingId, randomUid:$randomUid)
+}

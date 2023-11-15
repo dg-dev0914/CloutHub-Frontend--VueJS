@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const parseJwt = token => {
+          try {
+              return JSON.parse(atob(token.split('.')[1]));
+          } catch (e) {
+              return null;
+          }
+      };
+      const domainWhitelist = ['http://localhost:3000', 'https://public.clouthub.com', 'https://public.clouthub.dev', 'https://clouthub.com'];
+      window.addEventListener('message', (evt) => {
+        if (evt.data == 'authstatus' && domainWhitelist.includes(evt.origin)) {
+          const isAuthenticated = !!localStorage.access_token;
+          evt.source.postMessage({
+            name: 'authstatus',
+            authenticated: isAuthenticated,
+            user: isAuthenticated ? parseJwt(localStorage.access_token) : null,
+          }, '*');
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+query GetAnnouncement($id: String!) {
+  announcement: get_announcement(id: $id) {
+    id
+    createdAt
+    groupId
+    user {
+      username
+    }
+    description
+    link
+    group {
+      id
+      name
+      picture
+    }
+  }
+}

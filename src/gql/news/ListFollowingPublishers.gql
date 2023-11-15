@@ -1,0 +1,20 @@
+query {
+  users: list_following_publishers {
+    id
+    username
+    badgeType
+    displayname
+    profilePhotoURL
+    bio
+    followerCount
+    followingCount
+    myRelationship {
+      id
+      updatedAt
+      isFollower
+      isFriend
+      isBlocked
+      isFollowing
+    }
+  }
+}

@@ -1,0 +1,3 @@
+fragment GroupMemberCount on Group {
+  memberCount
+}

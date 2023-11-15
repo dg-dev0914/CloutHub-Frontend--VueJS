@@ -1,0 +1,21 @@
+mutation InsertPostFile(
+  $postId:String!,
+  $name:String!,
+  $size:Float!,
+  $url:String!,
+  $contentType:String!,
+  $description:String
+) {
+  insert_post_file(
+    postId:$postId,
+    name:$name,
+    size:$size,
+    description:$description,
+    url:$url,
+    contentType:$contentType,
+  ){
+    id
+    postId
+    name
+  }
+}

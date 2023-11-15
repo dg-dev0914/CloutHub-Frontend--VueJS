@@ -1,0 +1,54 @@
+#import "../fragments/PublicBasicPost.gql"
+
+query PublicGetVideo($id: String!) {
+  post: public_get_post(id: $id) {
+    ...BasicPost
+    viewCount
+    postedByUserId
+    user: postedByUser {
+      id
+      username
+      badgeType
+      displayname
+      followerCount
+      followingCount
+      profilePhotoURL
+      bannerImageURL
+      gender
+      subscribersCount
+      subscribedToChannel
+      isLiveStreaming
+      liveStreamUrl
+      channelName
+      channelPicture
+      channelDescription
+      channelCover
+      channelButtonLabel
+      channelButtonLink
+      videos {
+        safe
+        id
+        bodyText
+        video
+        createdAt
+        viewCount
+        user: postedByUser {
+          id
+          username
+          badgeType
+          displayname
+          profilePhotoURL
+        }
+      }
+    }
+    comments: replies(limit: 10) {
+      ...BasicPost
+      comments: replies(limit: 10) {
+        ...BasicPost
+        comments: replies(limit: 10) {
+          ...BasicPost
+        }
+      }
+    }
+  }
+}

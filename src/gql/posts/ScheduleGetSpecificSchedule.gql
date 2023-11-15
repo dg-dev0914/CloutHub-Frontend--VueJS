@@ -1,0 +1,9 @@
+query GetSpecificSchedule($cssid: Int!) {
+  scheduledstreams_getSpecificSchedule(cssid: $cssid) {
+    cssid
+    uid
+    stream_datetime
+    stream_title
+    stream_description
+  }
+}

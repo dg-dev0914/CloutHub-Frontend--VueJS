@@ -1,0 +1,7 @@
+query GetPostType($id:String!) {
+  post: get_post(id:$id) {
+    id,
+    type,
+    video
+  }
+}

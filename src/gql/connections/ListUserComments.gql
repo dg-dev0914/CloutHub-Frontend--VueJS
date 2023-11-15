@@ -1,0 +1,36 @@
+query ListUserComments($id: String!, $before: DateTime) {
+  comments: list_user_comments(userId: $id, before: $before) {
+    id
+    createdAt
+    images
+    video
+    bodyText
+    linkPreview
+    document
+    tags
+    location
+    rootPostId
+    user: postedByUser {
+      id
+      username
+      displayname
+      badgeType
+      profilePhotoURL
+      myRelationship {
+        id
+        isBlocked
+        isFollowing
+        isFollower
+      }
+    }
+    parentPost {
+      id
+      bodyText
+      postedByUser {
+        id
+        username
+        displayname
+      }
+    }
+  }
+}

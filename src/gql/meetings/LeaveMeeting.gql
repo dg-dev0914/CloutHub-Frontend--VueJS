@@ -1,0 +1,3 @@
+mutation LeaveMeeting($meetingId:String!){
+  leave_meeting(meetingId:$meetingId)
+}

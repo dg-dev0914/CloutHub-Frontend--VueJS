@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListFollowingVideos {
+  videos: list_following_posts_by_type(type:"video") {
+    ...VideoSummary
+  }
+}

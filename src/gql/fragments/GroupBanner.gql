@@ -1,0 +1,3 @@
+fragment GroupBanner on Group {
+  banner
+}

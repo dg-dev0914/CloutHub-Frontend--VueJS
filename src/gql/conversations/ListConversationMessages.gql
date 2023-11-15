@@ -1,0 +1,37 @@
+query ListConversationMessages($conversationId:String!, $before:DateTime) {
+  messages: list_conversation_messages(conversationId:$conversationId, before:$before) {
+    id
+    document
+    images
+    linkPreview
+    msgBody
+    msgCreateTime
+    video
+    sender {
+      id
+      username
+      firstname
+      lastname
+      displayname
+      profilePhotoURL
+    }
+    sharedPost {
+      id
+      images
+      linkPreview
+      bodyText
+      createdAt
+      video
+      document
+      postedByUser {
+        id
+        firstname
+        lastname
+        username
+        badgeType
+        displayname
+        profilePhotoURL
+      }
+    }
+  }
+}

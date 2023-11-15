@@ -1,0 +1,6 @@
+#import "@/gql/fragments/RelationshipSummary.gql"
+mutation FollowUser($userId:String!) {
+	follow_user(userId:$userId){
+    ...RelationshipSummary
+  }
+}

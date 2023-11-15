@@ -1,0 +1,3 @@
+query FinishMultipartUpload($uploadId: String!, $key:String!, $bucket:String!, $etags: [String!]!) {
+  url: finish_multipart_upload(uploadId: $uploadId, key: $key, bucket: $bucket, etags: $etags)
+}

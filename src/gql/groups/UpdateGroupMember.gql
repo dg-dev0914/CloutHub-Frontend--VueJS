@@ -1,0 +1,11 @@
+#import "../fragments/GroupMembership.gql"
+
+mutation UpdateGroupMember(
+  $groupId: String!
+  $userId: String!
+  $role: String!
+) {
+  update_group_member_role(userId: $userId, groupId: $groupId, role: $role) {
+    ...GroupMembership
+  }
+}

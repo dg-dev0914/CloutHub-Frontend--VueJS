@@ -1,0 +1,7 @@
+#import "../fragments/UserSummary.gql"
+
+query FriendSearch($keyword:String!){
+  friends: find_friends(keyword:$keyword){
+    ...UserSummary
+  }
+}

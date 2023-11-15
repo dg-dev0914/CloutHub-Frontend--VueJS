@@ -1,0 +1,7 @@
+#import "../fragments/MeetingSummary.gql"
+
+query ListScheduledMeetings{
+  meetings: list_scheduled_meetings {
+    ... MeetingSummary
+  }
+}

@@ -1,0 +1,21 @@
+mutation InsertMeetingFile(
+  $meetingId:String!,
+  $name:String!,
+  $size:Float!,
+  $url:String!,
+  $contentType:String!,
+  $description:String
+) {
+  insert_meeting_file(
+    meetingId:$meetingId,
+    name:$name,
+    size:$size,
+    description:$description,
+    url:$url,
+    contentType:$contentType,
+  ){
+    id
+    meetingId
+    name
+  }
+}

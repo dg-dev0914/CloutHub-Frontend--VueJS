@@ -1,0 +1,35 @@
+mutation InsertConversationMessage(
+  $msgBody: String
+  $receiverId: String!
+  $document: Media
+  $video: Media
+  $images: [Media!]
+  $linkPreview: LinkPreview
+) {
+  message: create_message(
+    msgBody: $msgBody
+    receiverId: $receiverId
+    document: $document
+    video: $video
+    images: $images
+    linkPreview: $linkPreview
+  ) {
+    conversationId
+    id
+    images
+    linkPreview
+    msgBody
+    msgCreateTime
+    video
+    document
+    sender {
+      id
+      lastname
+      firstname
+      displayname
+      profilePhotoURL
+      username
+      badgeType
+    }
+  }
+}

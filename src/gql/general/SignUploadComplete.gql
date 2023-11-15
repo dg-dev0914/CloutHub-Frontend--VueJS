@@ -1,0 +1,6 @@
+query SignUpload($bucket:String!, $type:String!) {
+  sign_upload_complete(type: $type, bucket: $bucket){
+    upload_url
+    download_url
+  }
+}

@@ -1,0 +1,14 @@
+fragment UserSummary on User {
+  id
+  firstname
+  lastname
+  badgeType
+  username
+  displayname
+  profilePhotoURL
+  bannerImageURL
+  bio
+  issuesOfInterestLocal
+  issuesOfInterestNational
+  location
+}

@@ -1,0 +1,3 @@
+fragment ConversationRead on Conversation {
+  unreadCount
+}

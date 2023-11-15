@@ -1,0 +1,8 @@
+#import "../fragments/RelationalUser.gql"
+
+query ListFollowingByUserId ($userId: String!){
+  people:  list_following_by_user_id (userId:$userId){
+    ...RelationalUser
+    bio
+  }
+}

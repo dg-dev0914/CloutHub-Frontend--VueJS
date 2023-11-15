@@ -1,0 +1,21 @@
+query ListPostShares($id: String!, $userId: String) {
+  list_post_shares: list_post_shares(postId: $id, userId: $userId) {
+    userId
+    createdAt
+    user {
+      id
+      username
+      badgeType
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFollower
+        isFriend
+        friendStatus
+        isBlocked
+        isFollowing
+      }
+    }
+  }
+}

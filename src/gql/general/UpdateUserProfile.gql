@@ -1,0 +1,62 @@
+mutation UpdateUserProfile(
+  $firstname: String,
+  $lastname: String,
+  $displayname: String,
+  $website:String,
+  $profilePhotoURL:String,
+  $privateLocation:Boolean,
+  $bannerImageURL:String,
+  $bio:String,
+  $location:Location,
+  $channelName: String,
+  $channelPicture: String,
+  $channelDescription: String,
+  $channelCover: String,
+  $channelSlug: String,
+  $channelButtonLabel: String,
+  $channelButtonLink: String,
+  $channelButtonLabel2: String,
+  $channelButtonLink2: String,
+) {
+  update_user(
+    firstname: $firstname,
+    lastname: $lastname,
+    displayname: $displayname,
+    location:$location,
+    profilePhotoURL:$profilePhotoURL,
+    privateLocation:$privateLocation,
+    bannerImageURL:$bannerImageURL,
+    website:$website,
+    bio:$bio,
+    channelName: $channelName,
+    channelPicture: $channelPicture,
+    channelDescription: $channelDescription,
+    channelSlug: $channelSlug,
+    channelCover: $channelCover,
+    channelButtonLabel: $channelButtonLabel,
+    channelButtonLink: $channelButtonLink,
+    channelButtonLabel2: $channelButtonLabel2,
+    channelButtonLink2: $channelButtonLink2
+  ) {
+    id
+    firstname
+    lastname
+    badgeType
+    displayname
+    location
+    profilePhotoURL
+    privateLocation
+    bannerImageURL
+    website
+    bio
+    channelName
+    channelPicture
+    channelDescription
+    channelCover
+    channelSlug
+    channelButtonLabel
+    channelButtonLink
+    channelButtonLabel2
+    channelButtonLink2
+  }
+}

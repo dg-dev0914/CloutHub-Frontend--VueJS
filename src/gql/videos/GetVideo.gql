@@ -1,0 +1,74 @@
+#import "../fragments/BasicPost.gql"
+
+query GetPost($id: String!) {
+  post: get_post(id: $id) {
+    ...BasicPost
+    viewCount
+    postedByUserId
+    user: postedByUser {
+      id
+      username
+      displayname
+      badgeType
+      followerCount
+      followingCount
+      profilePhotoURL
+      bannerImageURL
+      gender
+      subscribedToChannel
+      subscribersCount
+      isLiveStreaming
+      liveStreamUrl
+
+      channelName
+      channelPicture
+      channelDescription
+      channelCover
+      channelSlug
+      channelButtonLabel
+      channelButtonLink
+      channelButtonLabel2
+      channelButtonLink2
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isFollowing
+        isBlocked
+      }
+      videos {
+        safe
+        id
+        bodyText
+        video
+        createdAt
+        viewCount
+        user: postedByUser {
+          id
+          username
+          badgeType
+          displayname
+          profilePhotoURL
+          myRelationship {
+            id
+            isBlocked
+            isFollowing
+            isFollower
+          }
+        }
+      }
+    }
+    isQueued
+    isBookmarked
+    comments: replies(limit: 10) {
+      ...BasicPost
+      comments: replies(limit: 10) {
+        ...BasicPost
+        comments: replies(limit: 10) {
+          ...BasicPost
+        }
+      }
+    }
+  }
+}

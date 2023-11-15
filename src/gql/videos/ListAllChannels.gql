@@ -1,0 +1,9 @@
+#import "../fragments/VideoChannelSummary.gql"
+#import "../fragments/UserSummary.gql"
+
+query {
+  users: list_users_by_badge_type(badgeType:"channel", limit:100){
+    ...VideoChannelSummary
+    ...UserSummary
+  }
+}

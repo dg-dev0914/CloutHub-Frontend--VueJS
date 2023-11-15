@@ -1,0 +1,9 @@
+#import "../fragments/VideoChannelSummary.gql"
+#import "../fragments/UserSummary.gql"
+
+query {
+  users: list_featured_users_by_type(type:"video"){
+    ...VideoChannelSummary
+    ...UserSummary
+  }
+}

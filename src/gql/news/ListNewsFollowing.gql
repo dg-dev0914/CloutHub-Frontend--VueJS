@@ -1,0 +1,7 @@
+#import "../fragments/NewsSummary.gql"
+
+query ListFollowingNews ($before:DateTime){
+  posts: list_following_posts_by_type(type:"news", before:$before) {
+    ...NewsSummary
+  }
+}

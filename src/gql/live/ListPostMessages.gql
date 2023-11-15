@@ -1,0 +1,20 @@
+query ListPostMessages($postId:String!, $before:DateTime){
+  messages: list_post_messages(id:$postId, before:$before){
+    id
+    postId
+    postedByUserId
+    bodyText
+    createdAt
+    postedByUser {
+      id
+      username
+      displayname
+      profilePhotoURL
+      bannerImageURL
+      bio
+      location
+      website
+      politicalLeaning
+    }
+  }
+}

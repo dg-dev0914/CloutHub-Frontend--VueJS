@@ -1,0 +1,7 @@
+#import "../fragments/GroupMembership.gql"
+
+mutation JoinGroup($groupId:String!) {
+  join_group(groupId:$groupId) {
+    ... GroupMembership
+  }
+}

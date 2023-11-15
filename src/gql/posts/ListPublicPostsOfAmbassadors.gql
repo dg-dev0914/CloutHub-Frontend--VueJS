@@ -1,0 +1,45 @@
+# Write your query or mutation here
+query {
+    posts: list_public_posts_of_ambassadors {
+    id
+      bodyText
+      createdAt
+      postLevel
+      slug
+      linkPreview
+      timestamp
+      location
+      images
+      video
+      document
+      rootPostId
+      isBookmarked
+      parentPostId
+      tags
+      reactionCount
+      replyCount
+      sharedPostCount
+      profanityStatus
+      pendingAdminReview
+      category
+      type
+      mentions: mentionedUsers {
+        id
+        username
+        displayname
+      }
+      safe
+      user: postedByUser {
+          id
+          username
+          displayname
+          badgeType
+          profilePhotoURL
+          suspended
+        }
+      reactionTotals: reactionSummary {
+          type
+          count
+        }
+  }
+}

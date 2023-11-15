@@ -1,0 +1,49 @@
+mutation InsertMeeting(
+  $name: String!
+  $description: String
+  $picture: String
+  $category: String
+  $privacy: String!
+  $startTime: DateTime!
+  $parentMeetingId: String
+  $buttons: [Button!]
+  $enableQueue: Boolean
+  $slug: String,
+  $ticketPrice: Float,
+  $liveStreamMode: Boolean
+  $referralCodes: [MeetingReferralCodeInput!]
+) {
+  insert_meeting(
+    name: $name
+    description: $description
+    picture: $picture
+    category: $category
+    privacy: $privacy
+    startTime: $startTime
+    buttons: $buttons
+    parentMeetingId: $parentMeetingId
+    enableQueue: $enableQueue
+    slug: $slug
+    ticketPrice: $ticketPrice
+    referralCodes: $referralCodes
+    liveStreamMode: $liveStreamMode
+  ) {
+    id
+    name
+    picture
+    category
+    privacy
+    description
+    startTime
+    endTime
+    parentMeetingId
+    buttons
+    enableQueue
+    referralCodes {
+      id
+      name
+      amount
+      type
+    }
+  }
+}

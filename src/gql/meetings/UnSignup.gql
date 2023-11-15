@@ -1,0 +1,3 @@
+mutation UnSignup($meetingId:String!){
+  meeting_unsignup(meetingId:$meetingId)
+}

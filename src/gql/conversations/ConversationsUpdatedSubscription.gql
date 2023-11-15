@@ -1,0 +1,17 @@
+subscription ConversationsUpdated($receiverId: String!) {
+  conversationsUpdated(receiverId: $receiverId) {
+    id
+    senderId
+    msgBody
+    conversationId
+    msgCreateTime
+    receiverDeleted
+    senderDeleted
+    postId
+    videoId
+    document
+    linkPreview
+    images
+    video
+  }
+}

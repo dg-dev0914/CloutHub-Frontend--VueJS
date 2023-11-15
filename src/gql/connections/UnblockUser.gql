@@ -1,0 +1,6 @@
+mutation UnblockUser($userId:String!) {
+	unblock_user(userId:$userId){
+    id
+    isBlocked
+  }
+}

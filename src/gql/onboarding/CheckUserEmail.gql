@@ -1,0 +1,3 @@
+query CheckEmailAvailability($email:String!) {
+  check_email_availability(email:$email)
+}

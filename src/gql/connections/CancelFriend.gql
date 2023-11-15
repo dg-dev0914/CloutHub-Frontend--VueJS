@@ -1,0 +1,7 @@
+#import "@/gql/fragments/RelationshipSummary.gql"
+
+mutation Unfriend($userId:String!) {
+	cancel_friend(userId:$userId){
+    ...RelationshipSummary
+  }
+}

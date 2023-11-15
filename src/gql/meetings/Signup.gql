@@ -1,0 +1,7 @@
+#import "../fragments/MeetingMembership.gql"
+
+mutation Signup($meetingId: String!) {
+  meeting_signup(meetingId: $meetingId) {
+    ...MeetingMembership
+  }
+}

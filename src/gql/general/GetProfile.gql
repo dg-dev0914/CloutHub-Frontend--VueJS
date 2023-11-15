@@ -1,0 +1,80 @@
+query GetProfile($id: String, $username: String) {
+  user(id: $id, username: $username) {
+    id
+    firstname
+    lastname
+    username
+    channelName
+    displayname
+    followerCount
+    followingCount
+    friendCount
+    enablePayments
+    bio
+    badgeType
+    location
+    privateLocation
+    website
+    isLiveStreaming
+    profilePhotoURL
+    bannerImageURL
+    gender
+    allowUnsolicitedMessages
+    politicalLeaning
+    politicalRegistration
+    issuesOfInterestLocal
+    issuesOfInterestNational
+    showFollowerCount
+    createdAt
+    language
+    myRelationship {
+      id
+      isFriend
+      isFollower
+      isFollowing
+      friendStatus
+      isBlocked
+      blockedIn
+      blockedOut
+    }
+    mutual_friends {
+      id
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isBlocked
+      }
+    }
+    mutual_following {
+      id
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isBlocked
+      }
+    }
+    mutual_followers {
+      id
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFriend
+        isFollower
+        friendStatus
+        isBlocked
+      }
+    }
+    mutual_local_interests
+    mutual_national_interests
+    role
+  }
+}

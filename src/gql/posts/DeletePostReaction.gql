@@ -1,0 +1,3 @@
+mutation DeletePostReaction($postId:String!){
+  unreact_post(postId:$postId)
+}

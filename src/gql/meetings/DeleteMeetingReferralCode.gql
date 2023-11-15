@@ -1,0 +1,3 @@
+mutation DeleteMeetingReferralCode($id:String!){
+    delete_meeting_referral_code(id:$id)
+}

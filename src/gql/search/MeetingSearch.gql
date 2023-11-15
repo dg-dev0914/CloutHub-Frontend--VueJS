@@ -1,0 +1,7 @@
+#import "../fragments/MeetingSummary.gql"
+
+query MeetingSearch($query:String!){
+  meetings: find_meetings(keyword:$query){
+    ...MeetingSummary
+  }
+}

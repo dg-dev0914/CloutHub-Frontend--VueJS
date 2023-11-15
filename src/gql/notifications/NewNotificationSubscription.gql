@@ -1,0 +1,11 @@
+subscription NewNotificationSubscription {
+  newNotification {
+    id
+    body
+    url
+    status
+    createdAt
+    updatedAt
+    typeNotification
+  }
+} 

@@ -1,0 +1,95 @@
+[
+  {
+    "emoji": "👍",
+    "name": "Agree",
+    "shortname": ":light_skin_tone:",
+    "unicode": "1F44D 1F3FB",
+    "html": "&#128077;&#127995;",
+    "category": "People & Body (hand-fingers-closed)",
+    "order": "",
+    "value": "like"
+  }, {
+    "emoji": "👎",
+    "name": "Disagree",
+    "shortname": ":light_skin_tone:",
+    "unicode": "1F44E 1F3FB",
+    "html": "&#128078;&#127995;",
+    "category": "People & Body (hand-fingers-closed)",
+    "order": "",
+    "value": "dislike"
+  }, {
+    "emoji": "😢",
+    "name": "Cry",
+    "shortname": ":cry:",
+    "unicode": "1f622",
+    "html": "&#128546;",
+    "category": "Smileys & Emotion (face-concerned)",
+    "order": "54",
+    "value": "cry"
+  }, {
+    "emoji": "😊",
+    "name": "Smile",
+    "shortname": ":blush:",
+    "unicode": "1f60a",
+    "html": "&#128522;",
+    "category": "Smileys & Emotion (face-smiling)",
+    "order": "10",
+    "value": "smile"
+  }, {
+    "emoji": "❤️",
+    "name": "Love it",
+    "shortname": ":red_heart:",
+    "unicode": "2764",
+    "html": "&#x2764;",
+    "category": "Smileys & Emotion (emotion)",
+    "order": "",
+    "value": "love"
+  }, {
+    "emoji": "🤣",
+    "name": "Laugh",
+    "shortname": ":rolling_on_the_floor_laughing:",
+    "unicode": "1F923",
+    "html": "&#x1F923;",
+    "category": "Smileys & Emotion (face-smiling)",
+    "order": "",
+    "value": "laugh"
+  }, {
+    "emoji": "😡",
+    "name": "Angry",
+    "shortname": ":rage:",
+    "unicode": "1f621",
+    "html": "&#128545;",
+    "category": "Smileys & Emotion (face-negative)",
+    "order": "65",
+    "value": "angry"
+  }, {
+    "emoji": "🚫",
+    "name": "Block",
+    "shortname": ":no_entry_sign:",
+    "unicode": "1f6ab",
+    "html": "&#128683;",
+    "category": "Symbols (warning)",
+    "order": "1992",
+    "value": "block"
+  },
+  {
+    "emoji": "🚫",
+    "name": "Salute",
+    "shortname": ":no_entry_sign:",
+    "unicode": "1f6abb",
+    "html": "&#128683;",
+    "category": "Symbols (warning)",
+    "order": "1992",
+    "value": "salute"
+  },
+  {
+    "emoji": "",
+    "name": "Pray",
+    "shortname": ":no_entry_sign:",
+    "unicode": "1f6aabb",
+    "html": "&#128683;",
+    "category": "Symbols (pray)",
+    "order": "1992",
+    "value": "pray"
+  }
+]

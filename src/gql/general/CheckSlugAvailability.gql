@@ -1,0 +1,4 @@
+
+query CheckSlugAvailability ($type: String!, $slug:String!){
+    check_slug_availability(type: $type, slug: $slug)
+}

@@ -1,0 +1,6 @@
+query GetUploadToken {
+  aws_token{
+    IdentityId
+    Token
+  }
+}

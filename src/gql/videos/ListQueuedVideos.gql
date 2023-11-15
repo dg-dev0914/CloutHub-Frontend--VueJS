@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListQueuedVideos ($offset:Float, $limit:Float) {
+  videos: queued_posts_by_type(type:"video", offset:$offset, limit:$limit) {
+    ... VideoSummary
+  }
+}

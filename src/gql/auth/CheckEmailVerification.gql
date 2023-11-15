@@ -1,0 +1,4 @@
+
+query CheckEmailVerification($email:String!) {
+  verified: check_email_verified(email:$email)
+}

@@ -1,0 +1,7 @@
+#import "../fragments/PublicBasicPost.gql"
+query PublicListRelatedVideos($category:String) {
+  relatedVideos: public_list_related_videos (category:$category) {
+    ...BasicPost
+    viewCount
+  }
+}

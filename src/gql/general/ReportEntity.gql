@@ -1,0 +1,8 @@
+mutation ReportEntity($type:String!,$id:String!,$comment:String!,$issues:[String!]!){
+  report_entity(
+    type:$type,
+    id:$id,
+    comment:$comment,
+    issues:$issues
+  )
+}

@@ -1,0 +1,9 @@
+query ListPostFiles($postId:String!) {
+  files: list_post_files(postId:$postId){
+    id
+    name
+    size
+    contentType
+    url
+  }
+}

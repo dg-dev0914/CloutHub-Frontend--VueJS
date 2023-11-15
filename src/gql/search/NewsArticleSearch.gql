@@ -1,0 +1,30 @@
+query NewsArticleSearch($query: String!, $limit: Float, $offset: Float) {
+  posts: find_news_articles(
+    searchString: $query
+    limit: $limit
+    offset: $offset
+  ) {
+    id
+    postedByUser {
+      id
+      displayname
+      profilePhotoURL
+    }
+    user: postedByUser {
+      id
+      displayname
+      profilePhotoURL
+      username
+    }
+    bodyText
+    video
+    createdAt
+    viewCount
+    safe
+    linkPreview
+    isQueued
+    isBookmarked
+    isQueued
+    isBookmarked
+  }
+}

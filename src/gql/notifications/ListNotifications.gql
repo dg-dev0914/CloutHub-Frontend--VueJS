@@ -1,0 +1,44 @@
+#import "@/gql/fragments/RelationshipSummary.gql"
+
+query ListNotifications($before: DateTime) {
+  notifications: list_notices(before: $before) {
+    id
+    itemCount
+    type
+    postId
+    actorId
+    meetingId
+    announcement {
+      id
+      description
+      link
+      groupId
+      group {
+        name
+        picture
+      }
+    }
+    meeting {
+      id
+      name
+      description
+      privacy
+      startTime
+      endTime
+    }
+    updatedAt
+    lastActor {
+      id
+      badgeType
+      username
+      firstname
+      lastname
+      profilePhotoURL
+      channelName
+      displayname
+      myRelationship {
+      ...RelationshipSummary
+      }
+    }
+  }
+}

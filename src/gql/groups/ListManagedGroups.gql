@@ -1,0 +1,7 @@
+#import "../fragments/GroupSummary.gql"
+
+query ListManagedGroups ($offset:Float, $limit:Float) {
+  groups: list_managed_groups (offset:$offset, limit:$limit){
+    ...GroupSummary
+  }
+}

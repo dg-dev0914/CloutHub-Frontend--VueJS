@@ -1,0 +1,7 @@
+#import "../fragments/NewsSummary.gql"
+
+query ListNews($category:String, $before:DateTime){
+  posts: list_news_by_category(category:$category, before:$before){
+    ...NewsSummary
+  }
+}

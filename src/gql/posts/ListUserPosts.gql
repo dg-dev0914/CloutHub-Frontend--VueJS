@@ -1,0 +1,32 @@
+#import "../fragments/BasicPost.gql"
+
+query ListUserPosts($id:String!, $before:DateTime) {
+  posts: list_user_posts(userId:$id, before:$before){
+  	... BasicPost
+    group {
+      id
+      name
+    }
+    comments:replies(limit:1) {
+      ... BasicPost
+      comments:replies(limit:1) {
+        ... BasicPost
+        comments:replies(limit:1) {
+          ... BasicPost
+        }
+      }
+    }
+    sharedPost {
+      ... BasicPost
+      comments:replies(limit:1) {
+        ... BasicPost
+        comments:replies(limit:1) {
+          ... BasicPost
+          comments:replies(limit:1) {
+            ... BasicPost
+          }
+        }
+      }
+    }
+  }
+}

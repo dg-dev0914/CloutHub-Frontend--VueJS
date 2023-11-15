@@ -1,0 +1,3 @@
+mutation QueuePost($postId:String!){
+  queue_post(postId:$postId)
+}

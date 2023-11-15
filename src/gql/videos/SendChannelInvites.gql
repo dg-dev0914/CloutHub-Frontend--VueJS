@@ -1,0 +1,3 @@
+mutation SendChannelInvites($users: [String!], $groups: [String!]) {
+  send_channel_subscribe_invite(users: $users, groups: $groups)
+}

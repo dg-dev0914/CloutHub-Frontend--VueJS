@@ -1,0 +1,18 @@
+#import "../fragments/UserSummary.gql"
+
+query SearchPublishers($searchString: String!) {
+  users: find_news_publishers(searchString: $searchString) {
+    ...UserSummary
+    myRelationship {
+      id
+      isFollower
+      isFollowing
+      isFriend
+      isBlocked
+      friendStatus
+      updatedAt
+    }
+    followerCount
+    followingCount
+  }
+}

@@ -1,0 +1,11 @@
+fragment VideoChannelSummary on User {
+  id
+  followerCount
+  channelName
+  channelPicture
+  channelDescription
+  channelNumber
+  subscribersCount
+  displayname
+  subscribedToChannel
+}

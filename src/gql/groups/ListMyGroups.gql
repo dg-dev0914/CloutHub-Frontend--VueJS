@@ -1,0 +1,7 @@
+#import "../fragments/GroupSummary.gql"
+
+query ListMyGroups($offset: Float, $limit:Float) {
+  groups: list_my_groups(offset: $offset, limit: $limit) {
+    ...GroupSummary
+  }
+}

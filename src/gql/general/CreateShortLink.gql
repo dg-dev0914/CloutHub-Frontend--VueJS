@@ -1,0 +1,5 @@
+mutation CreateShortLink($itemType:String!, $itemId:String!){
+  link:create_short_link(itemId:$itemId, itemType:$itemType){
+    code
+  }
+}

@@ -1,0 +1,32 @@
+#import "../fragments/BasicPost.gql"
+
+query ListMyGroupsPosts($before:DateTime) {
+  posts: list_my_groups_posts(before:$before){
+  	... BasicPost
+    group {
+      id
+      name
+    }
+    comments:replies(limit:1) {
+      ... BasicPost
+      comments:replies(limit:1) {
+        ... BasicPost
+        comments:replies(limit:1) {
+          ... BasicPost
+        }
+      }
+    }
+    sharedPost {
+      ... BasicPost
+      comments:replies(limit:1) {
+        ... BasicPost
+        comments:replies(limit:1) {
+          ... BasicPost
+          comments:replies(limit:1) {
+            ... BasicPost
+          }
+        }
+      }
+    }
+  }
+}

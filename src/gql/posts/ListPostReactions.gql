@@ -1,0 +1,22 @@
+query ListPostReactions($id:String!, $type:String, $before:DateTime){
+  list_post_reactions: list_post_reactions(type:$type,postId:$id, before:$before){
+    id
+    userId
+    createdAt
+    user {
+      id
+      username
+      badgeType
+      displayname
+      profilePhotoURL
+      myRelationship {
+        id
+        isFriend
+        friendStatus
+        isFollower
+        isFollowing
+        isBlocked
+      }
+    }
+  }
+}

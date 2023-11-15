@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="check-circle_default" data-name="check-circle/default" transform="translate(0.19 0.19)">
+    <rect id="check-circle_default_Background_" data-name="check-circle/default (Background)" width="72" height="72" transform="translate(-0.19 -0.19)" fill="none"/>
+    <path id="Shape" d="M59.684,27.085v2.775a29.842,29.842,0,1,1-17.7-27.276" transform="translate(2.984 8.934)" fill="none" stroke="#00c472" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" stroke-dasharray="0 0"/>
+    <path id="Shape-2" data-name="Shape" d="M41.779,0,8.953,32.826,0,23.874" transform="translate(23.874 11.937)" fill="none" stroke="#00c472" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" stroke-dasharray="0 0"/>
+    <path id="Size" d="M71.621,0V71.621H0V0Z" fill="none"/>
+  </g>
+</svg>

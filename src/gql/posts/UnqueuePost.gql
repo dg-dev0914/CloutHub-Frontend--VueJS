@@ -1,0 +1,3 @@
+mutation UnqueuePost($postId:String!){
+  unqueue_post(postId:$postId)
+}

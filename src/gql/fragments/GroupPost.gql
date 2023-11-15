@@ -1,0 +1,12 @@
+#import "./BasicPost.gql"
+
+fragment GroupPost on Post {
+  ...BasicPost
+  groupId
+  isPinned,
+  group {
+    myMembership {
+      role
+    }
+  }
+}

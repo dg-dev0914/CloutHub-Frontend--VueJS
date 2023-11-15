@@ -1,0 +1,3 @@
+mutation DeleteMeetingFile($id:String!){
+  delete_meeting_file(id:$id)
+}

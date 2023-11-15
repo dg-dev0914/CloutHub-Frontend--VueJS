@@ -1,0 +1,7 @@
+mutation InsertPostMessage($postId:String!, $bodyText:String!) {
+  insert_post_message(postId:$postId,bodyText:$bodyText){
+    id
+    postId
+    bodyText
+  }
+}

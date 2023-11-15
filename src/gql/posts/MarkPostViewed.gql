@@ -1,0 +1,3 @@
+mutation MarkPostViewed($postId:String!){
+  mark_post_viewed(postId:$postId)
+}

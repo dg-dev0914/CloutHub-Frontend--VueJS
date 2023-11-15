@@ -1,0 +1,62 @@
+[
+  {
+    "label": "News",
+    "value": "news"
+  },
+  {
+    "label": "Faith",
+    "value": "faith"
+  },
+  {
+    "label": "Politics & Civic",
+    "value": "politics"
+  },
+  {
+    "label": "Music",
+    "value": "music"
+  },
+  {
+    "label": "Finance & Investing",
+    "value": "finance"
+  },
+  {
+    "label": "Business",
+    "value": "business"
+  },
+  {
+    "label": "Health & Fitness",
+    "value": "health"
+  },
+  {
+    "label": "Movies & Shows",
+    "value": "movies"
+  },
+  {
+    "label": "Sports",
+    "value": "sports"
+  },
+  {
+    "label": "Technology",
+    "value": "technology"
+  },
+  {
+    "label": "Games & Gaming",
+    "value": "games"
+  },
+  {
+    "label": "Education",
+    "value": "education"
+  },
+  {
+    "label": "Personal Growth",
+    "value": "personalgrowth"
+  },
+  {
+    "label": "Fashion & Beauty",
+    "value": "fashion"
+  },
+  {
+    "label": "Humor & Memes",
+    "value": "humor"
+  }
+]

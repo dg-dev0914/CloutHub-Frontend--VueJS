@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListWatchedVideos ($offset:Float, $limit:Float) {
+  videos: recently_viewed_posts_by_type(type:"video", offset:$offset, limit:$limit) {
+    ...VideoSummary
+  }
+}

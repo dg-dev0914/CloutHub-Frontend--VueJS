@@ -1,0 +1,37 @@
+query GetChannel($id: String) {
+  user(id: $id) {
+    id
+    username
+    displayname
+    badgeType
+    followerCount
+    followingCount
+    profilePhotoURL
+    bannerImageURL
+    gender
+    subscribedToChannel
+    isLiveStreaming
+    liveStreamUrl
+    subscribersCount
+    myRelationship {
+      id
+      isFriend
+      isFollowing
+      isFollower
+      friendStatus
+      isBlocked
+    }
+    videoPosts: post_summary(type: "video") {
+      count
+    }
+    channelName
+    channelPicture
+    channelDescription
+    channelCover
+    channelSlug
+    channelButtonLabel
+    channelButtonLink
+    channelButtonLabel2
+    channelButtonLink2
+  }
+}

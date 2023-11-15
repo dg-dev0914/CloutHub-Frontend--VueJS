@@ -1,0 +1,14 @@
+#import "../fragments/MeetingSummary.gql"
+
+query GetMeeting($id:String!){
+  meeting: get_meeting(id:$id){
+    ... MeetingSummary
+    liveStreamUrl
+    liveStreamMode
+    enableQueue
+    parentMeeting {
+      id
+      name
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#import "../fragments/PublicVideoSummary.gql"
+
+query PublicListLiveVideos($before: DateTime) {
+  videos: public_list_live_videos(before: $before) {
+    ...PublicVideoSummary
+  }
+}

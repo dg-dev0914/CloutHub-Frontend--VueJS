@@ -1,0 +1,19 @@
+.v-toast__item--success {
+  background-color: var(--cs-primary-base);
+}
+
+.v-toast__item--info {
+  background-color: var(--cs-info-base);
+}
+
+.v-toast__item--warning {
+  background-color: var(--cs-warning-base);
+}
+
+.v-toast__item--error {
+  background-color: var(--cs-danger-base);
+}
+
+.v-toast__item--default {
+  background-color: var(--cs-default-base);
+}

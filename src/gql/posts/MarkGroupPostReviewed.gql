@@ -1,0 +1,4 @@
+
+mutation MarkGroupPostReviewed($postId:String!){
+  mark_group_post_reviewed(postId:$postId)
+}

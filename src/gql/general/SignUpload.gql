@@ -1,0 +1,3 @@
+query SignUpload($bucket:String!, $type:String!) {
+  url: sign_upload(bucket:$bucket, type:$type)
+}

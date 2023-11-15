@@ -1,0 +1,3 @@
+mutation IncrementFeaturedPostCount ($postId: String!, $property: String!) {
+  incrementFeaturedPostCount(postId: $postId, property: $property)
+}

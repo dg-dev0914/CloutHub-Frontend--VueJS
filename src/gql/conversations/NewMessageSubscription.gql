@@ -1,0 +1,7 @@
+subscription newMessageSubscription {
+  new_message {
+    senderId
+    msgBody
+    senderId
+  }
+}

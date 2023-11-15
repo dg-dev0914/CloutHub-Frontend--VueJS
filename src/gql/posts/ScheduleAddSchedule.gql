@@ -1,0 +1,11 @@
+mutation AddSchedule($uid: String!, $stream_datetime: DateTime!, $stream_datetime_end: DateTime!, $stream_title: String!, $stream_description: String!, $stream_image: String!) {
+  scheduledstreams_addSchedule(uid: $uid, stream_datetime: $stream_datetime, stream_datetime_end: $stream_datetime_end, stream_title: $stream_title, stream_description: $stream_description, stream_image: $stream_image) {
+    cssid
+    uid
+    stream_datetime
+    stream_datetime_end
+    stream_title
+    stream_description
+    stream_image
+  }
+}

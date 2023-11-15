@@ -1,0 +1,3 @@
+mutation DeleteGroup($id:String!) {
+  delete_group(id: $id)
+}

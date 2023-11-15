@@ -1,0 +1,9 @@
+query ListMeetingFiles($meetingId:String!) {
+  files: list_meeting_files(id:$meetingId){
+    id
+    name
+    size
+    contentType
+    url
+  }
+}

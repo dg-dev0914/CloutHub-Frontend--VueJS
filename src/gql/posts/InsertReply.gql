@@ -1,0 +1,26 @@
+#import "../fragments/BasicPost.gql"
+
+mutation InsertReply(
+  $parentPostId:uuid!,
+  $rootPostId:uuid!
+  $postLevel:smallint!,
+  $userId:uuid!,
+  $bodyText:String!,
+  $now:timestamptz!,
+  $nowTS:bigint!,
+  $viewerId: uuid!,
+){
+  insert_posts_one(object:{
+    parentPostId:$parentPostId,
+    rootPostId:$rootPostId,
+    postLevel:$postLevel,
+    postedByUserId:$userId,
+    bodyText:$bodyText,
+    timestamp:$nowTS,
+    createdAt:$now,
+    likeCount:0,
+    replyCount:0
+  }) {
+    ...BasicPost
+  }
+}

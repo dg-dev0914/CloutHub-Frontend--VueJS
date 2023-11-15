@@ -1,0 +1,7 @@
+#import "../fragments/VideoSummary.gql"
+
+query ListPopularVideos {
+  videos: list_popular_videos {
+    ...VideoSummary
+  }
+}

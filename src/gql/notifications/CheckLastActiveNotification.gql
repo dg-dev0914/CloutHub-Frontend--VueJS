@@ -1,0 +1,11 @@
+query CheckLastActiveNotification {
+  notification: check_last_active_notification {
+    id
+    body
+    url
+    typeNotification
+    status
+    createdAt
+    updatedAt
+  }
+}

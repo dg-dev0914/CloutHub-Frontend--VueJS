@@ -1,0 +1,5 @@
+mutation SetMeetingMemberRole($meetingId:String!,$userId:String!,$role:String!){
+  set_meeting_member_role(role:$role,meetingId:$meetingId,userId:$userId) {
+    id
+  }
+}

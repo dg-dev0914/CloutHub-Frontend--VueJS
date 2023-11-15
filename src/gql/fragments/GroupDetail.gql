@@ -1,0 +1,7 @@
+#import "./GroupSummary.gql"
+
+fragment GroupDetail on Group {
+  ... GroupSummary
+  description
+  banner
+}

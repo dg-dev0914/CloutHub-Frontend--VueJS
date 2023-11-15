@@ -1,0 +1,3 @@
+mutation DeleteSchedule($cssid: String!) {
+  scheduledstreams_deleteSchedule(cssid: $cssid)
+}

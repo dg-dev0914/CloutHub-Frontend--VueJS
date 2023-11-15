@@ -1,0 +1,3 @@
+mutation SendFeedback($type:String!, $message:String!){
+  send_feedback(message:$message,type:$type)
+}

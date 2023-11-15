@@ -1,0 +1,7 @@
+#import "../fragments/GroupSummary.gql"
+
+query ListRecommendedGroups ($offset:Float, $limit:Float) {
+  groups: list_recommended_groups(offset:$offset, limit:$limit){
+    ...GroupSummary
+  }
+}

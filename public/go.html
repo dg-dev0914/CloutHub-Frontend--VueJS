@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <script>
+      const qs = new URLSearchParams(window.location.search);
+      const token = qs.get('access_token');
+      const next = qs.get('next');
+      if (token && next) {
+        localStorage.clear();
+        localStorage.access_token = token;
+        window.location.replace(`/#${next}`);
+      }
+    </script>
+  </body>
+</html>

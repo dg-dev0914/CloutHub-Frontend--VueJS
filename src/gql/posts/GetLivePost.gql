@@ -1,0 +1,6 @@
+query GetLivePost {
+  get_live_post {
+    id
+    video
+  }
+}

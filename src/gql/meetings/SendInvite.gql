@@ -1,0 +1,3 @@
+mutation SendInvite($meetingId:String!,$users:String,$groups:String, $grantFreeTicket:Boolean){
+  send_meeting_invite(meetingId:$meetingId,users:$users, groups:$groups, grantFreeTicket: $grantFreeTicket)
+}

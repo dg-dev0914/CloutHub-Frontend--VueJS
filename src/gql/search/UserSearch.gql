@@ -1,0 +1,19 @@
+query UserSearch ($query:String!, $limit: Float, $offset: Float) {
+  users: find_users(searchType:KEYWORD,searchString:$query, limit: $limit, offset:$offset){
+    id
+    displayname
+    username
+    badgeType
+    allowUnsolicitedMessages
+    bio
+    profilePhotoURL
+    myRelationship{
+      id
+      isFriend
+      friendStatus
+      isFollower
+      isFollowing
+      isBlocked
+    }
+  }
+}

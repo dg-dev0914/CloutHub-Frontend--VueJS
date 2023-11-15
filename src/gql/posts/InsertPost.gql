@@ -1,0 +1,51 @@
+#import "../fragments/BasicPost.gql"
+
+mutation InsertPost(
+  $images: [Media!]
+  $document: Media
+  $bodyText: String
+  $video: Media
+  $visibility: String
+  $location: String
+  $room: String
+  $tags: [String!]
+  $linkPreview: LinkPreview
+  $postLevel: String
+  $groupId: String
+  $parentPostId: String
+  $rootPostId: String
+  $sharedPostId: String
+  $category: String
+  $subgroupIds: [String!]
+) {
+  create_post(
+    bodyText: $bodyText
+    document: $document
+    images: $images
+    video: $video
+    visibility: $visibility
+    location: $location
+    tags: $tags
+    linkPreview: $linkPreview
+    room: $room
+    postLevel: $postLevel
+    groupId: $groupId
+    parentPostId: $parentPostId
+    rootPostId: $rootPostId
+    sharedPostId: $sharedPostId
+    category: $category
+    subgroupIds: $subgroupIds
+  ) {
+    ...BasicPost
+    group {
+      id
+      name
+    }
+    sharedPost {
+      ... BasicPost
+    }
+    comments:replies(limit:1) {
+      ... BasicPost
+    }
+  }
+}

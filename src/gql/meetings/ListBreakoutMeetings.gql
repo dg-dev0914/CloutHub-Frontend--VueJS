@@ -1,0 +1,7 @@
+#import "../fragments/MeetingSummary.gql"
+
+query ListBreakoutMeetings($id:String!) {
+  meetings: list_breakout_meetings(id:$id){
+    ...MeetingSummary
+  }
+}

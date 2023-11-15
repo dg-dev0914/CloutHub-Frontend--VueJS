@@ -1,0 +1,9 @@
+fragment RelationshipSummary on Relationship {
+  id
+  isFollower
+  isFollowing
+  isFriend
+  isBlocked
+  friendStatus
+  updatedAt
+}

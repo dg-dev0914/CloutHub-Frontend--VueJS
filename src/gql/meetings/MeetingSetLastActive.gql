@@ -1,0 +1,3 @@
+mutation MeetingSetLastActive($id:String!){
+  meeting_set_last_active(id:$id)
+}

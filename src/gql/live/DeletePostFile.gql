@@ -1,0 +1,3 @@
+mutation DeletePostFile($id:String!){
+  delete_post_file(id:$id)
+}

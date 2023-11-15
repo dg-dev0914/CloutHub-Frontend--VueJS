@@ -1,0 +1,3 @@
+mutation DeleteMeetingMessage($id:String!){
+  delete_meeting_message(id:$id)
+}

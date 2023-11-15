@@ -1,0 +1,7 @@
+mutation SubscribeChannel($channelId:String!) {
+	subscribe_channel(channelId:$channelId){
+    id
+    userId
+    channelId
+  }
+}

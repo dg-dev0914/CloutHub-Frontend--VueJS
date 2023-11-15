@@ -1,0 +1,3 @@
+mutation ChangeEmail($newEmail:String!){
+  change_email(newEmail:$newEmail)
+}

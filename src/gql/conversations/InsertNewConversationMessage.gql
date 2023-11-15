@@ -1,0 +1,31 @@
+mutation InsertNewConversationMessage(
+  $msgBody:String,
+  $receiverId:String!,
+  $document:Media,
+  $video:Media,
+  $images:[Media!]
+  $linkPreview: LinkPreview,
+  $postId: String
+){
+  newMessage: create_message(
+    msgBody:$msgBody,
+    receiverId:$receiverId,
+    document:$document,
+    video:$video,
+    images:$images,
+    linkPreview: $linkPreview,
+    postId: $postId
+  ){
+    conversationId
+    id
+    messageId
+    images
+    linkPreview
+    msgBody
+    msgCreateTime
+    senderId
+    receiverId
+    video
+    document
+  }
+}

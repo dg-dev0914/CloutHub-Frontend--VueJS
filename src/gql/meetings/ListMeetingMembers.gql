@@ -1,0 +1,19 @@
+query ListMeetingMembers($meetingId:String!){
+  members: list_meeting_members(id:$meetingId){
+    id
+    role
+    online
+    meetingId
+    userId
+    ticketStatus
+    ticketPricePaid
+    referralCode
+    user {
+      id
+      username
+      displayname
+      profilePhotoURL
+      bio
+    }
+  }
+}

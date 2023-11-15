@@ -1,0 +1,33 @@
+mutation UpdatePost(
+  $postId: String!
+  $bodyText: String,
+  $linkPreview: LinkPreview,
+  $images: [Media!],
+  $document: Media,
+  $video: Media,
+  $location: String,
+  $tags: [String!],
+  $category: String,
+) {
+  update_post(
+    postId: $postId
+    bodyText: $bodyText
+    linkPreview: $linkPreview
+    images: $images
+    document: $document
+    video: $video
+    location: $location
+    tags: $tags
+    category: $category
+  ) {
+    id
+    bodyText
+    linkPreview
+    images
+    document
+    video
+    location
+    tags
+    category
+  }
+}

@@ -1,0 +1,3 @@
+query RefreshToken {
+  token: generate_new_token
+}

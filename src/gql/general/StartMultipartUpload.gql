@@ -1,0 +1,8 @@
+query StartMultipartUpload($bucket:String!, $type:String!, $parts: Float!) {
+  upload: start_multipart_upload(bucket:$bucket, type:$type, parts: $parts) {
+    key,
+    bucket,
+    uploadId,
+    signedUrls
+  }
+}

@@ -1,0 +1,32 @@
+query ListConversations ($before:DateTime){
+  conversations: list_conversations (before:$before) {
+    id
+    conversationId
+    msgCreateTime
+    unreadCount
+    otherParty{
+      id
+      username
+      profilePhotoURL
+      firstname
+      lastname
+      displayname
+      badgeType
+      myRelationship {
+        id
+        isFriend
+        isBlocked
+      }
+    }
+    latestMessage{
+      id
+      msgBody
+      msgCreateTime
+      senderId
+      video
+      images
+      document
+      postId
+    }
+  }
+}

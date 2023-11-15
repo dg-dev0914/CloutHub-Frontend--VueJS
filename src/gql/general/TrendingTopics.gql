@@ -1,0 +1,6 @@
+query {
+  topics: list_trending_tags{
+    tag: id
+    count
+  }
+}

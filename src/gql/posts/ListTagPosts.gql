@@ -1,0 +1,17 @@
+#import "../fragments/BasicPost.gql"
+
+query ListTagPosts($tag:String!, $before:DateTime) {
+  posts: list_tag_posts(tag:$tag, before:$before){
+  	... BasicPost
+    group {
+      id
+      name
+    }
+    comments:replies(limit:1) {
+      ... BasicPost
+      comments:replies(limit:1) {
+        ... BasicPost
+      }
+    }
+  }
+}

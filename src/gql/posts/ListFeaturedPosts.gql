@@ -1,0 +1,11 @@
+query ListFeaturedPosts {
+  featuredPosts: list_featured_posts {
+    id
+    slot
+    position
+    postid
+    status
+    display_start
+    display_end
+  }
+}
